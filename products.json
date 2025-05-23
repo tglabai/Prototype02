@@ -38,5 +38,196 @@
     "imagem": "assets/images/capa-banco.jpg",
     "whatsapp": "https://wa.me/5511999999999",
     "categoria": "interior"
+  },
+  {
+    "id": "6",
+    "nome": "Filtro de Ar",
+    "descricao": "Filtro eficiente para melhorar a performance do motor.",
+    "imagem": "assets/images/filtro-ar.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "motor"
+  },
+  {
+    "id": "7",
+    "nome": "Amortecedor Traseiro",
+    "descricao": "Conforto e estabilidade nas suas viagens.",
+    "imagem": "assets/images/amortecedor.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "motor"
+  },
+  {
+    "id": "8",
+    "nome": "Jogo de Velas de Ignição",
+    "descricao": "Melhora o rendimento do motor e economia de combustível.",
+    "imagem": "assets/images/velas-ignicao.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "motor"
+  },
+  {
+    "id": "9",
+    "nome": "Disco de Freio",
+    "descricao": "Alta durabilidade para frenagens seguras.",
+    "imagem": "assets/images/disco-freio.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "pneus"
+  },
+  {
+    "id": "10",
+    "nome": "Calota Aro 15",
+    "descricao": "Estilo e proteção para as rodas do seu carro.",
+    "imagem": "assets/images/calota.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "pneus"
+  },
+  {
+    "id": "11",
+    "nome": "Lâmpada Xenon H11",
+    "descricao": "Iluminação branca e potente para máxima visibilidade.",
+    "imagem": "assets/images/lamps-xenon.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "iluminacao"
+  },
+  {
+    "id": "12",
+    "nome": "Painel Digital",
+    "descricao": "Moderno e fácil de ler, melhora a estética do seu carro.",
+    "imagem": "assets/images/painel-digital.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "eletronicos"
+  },
+  {
+    "id": "13",
+    "nome": "Sensor de Estacionamento",
+    "descricao": "Mais segurança para suas manobras.",
+    "imagem": "assets/images/sensor-estacionamento.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "eletronicos"
+  },
+  {
+    "id": "14",
+    "nome": "Tampão de Porta Malas",
+    "descricao": "Protege o interior do porta malas contra poeira e chuva.",
+    "imagem": "assets/images/tampao-malas.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "interior"
+  },
+  {
+    "id": "15",
+    "nome": "Tapete Automotivo",
+    "descricao": "Resistente e fácil de limpar.",
+    "imagem": "assets/images/tapete.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "interior"
+  },
+  {
+    "id": "16",
+    "nome": "Cabo de Bateria",
+    "descricao": "Alta condução elétrica e resistência.",
+    "imagem": "assets/images/cabo-bateria.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "motor"
+  },
+  {
+    "id": "17",
+    "nome": "Retrovisor Lateral",
+    "descricao": "Visão ampla e segura.",
+    "imagem": "assets/images/retrovisor.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "interior"
+  },
+  {
+    "id": "18",
+    "nome": "Kit de Ferramentas",
+    "descricao": "Essencial para pequenos reparos.",
+    "imagem": "assets/images/kit-ferramentas.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "motor"
+  },
+  {
+    "id": "19",
+    "nome": "Escapamento Esportivo",
+    "descricao": "Melhora o desempenho e o som do seu carro.",
+    "imagem": "assets/images/escapamento.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "motor"
+  },
+  {
+    "id": "20",
+    "nome": "Antena Automotiva",
+    "descricao": "Recepção de sinal melhorada para rádio e TV.",
+    "imagem": "assets/images/antena.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "eletronicos"
+  },
+  {
+    "id": "21",
+    "nome": "Alarme Automotivo",
+    "descricao": "Proteção completa contra roubos.",
+    "imagem": "assets/images/alarme.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "eletronicos"
+  },
+  {
+    "id": "22",
+    "nome": "Suporte para Celular",
+    "descricao": "Prático para uso enquanto dirige.",
+    "imagem": "assets/images/suporte-celular.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "eletronicos"
+  },
+  {
+    "id": "23",
+    "nome": "Volante Esportivo",
+    "descricao": "Melhora a dirigibilidade e o visual do carro.",
+    "imagem": "assets/images/volante.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "interior"
+  },
+  {
+    "id": "24",
+    "nome": "Câmera de Ré",
+    "descricao": "Facilita as manobras de ré com segurança.",
+    "imagem": "assets/images/camera-re.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "eletronicos"
+  },
+  {
+    "id": "25",
+    "nome": "Kit Farol Neblina",
+    "descricao": "Melhora a visibilidade em dias de neblina.",
+    "imagem": "assets/images/farol-neblina.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "iluminacao"
+  }, 
+  {
+    "id": "26",
+    "nome": "Pastilha de Freio",
+    "descricao": "Melhora a segurança ao frear.",
+    "imagem":"assets/images/Pastilha-freio.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "pneus"
+  },
+     {
+    "id": "27",
+    "nome": "Pneu 205/55 R16",
+    "descricao": "Prático para uso enquanto dirige.",
+    "imagem": "assets/images/pneu.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "pneus"
+  },  {
+    "id": "28",
+    "nome": "Lâmpada LED",
+    "descricao": "Melhora a visibilidade em dias de neblina.",
+    "imagem": "assets/images/lamps-led.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "iluminacao"
+  },  {
+    "id": "29",
+    "nome": "Óleo Lubrificante",
+    "descricao": "Melhora o desempenho e o som do seu carro.",
+    "imagem": "assets/images/oleo.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "motor"
   }
+    
 ]

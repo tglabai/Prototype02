@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Auto Peças Store</title>
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
 </head>
 <body>
   <header class="header">
@@ -18,45 +19,191 @@
     </nav>
   </header>
 
-  <section class="banner">
+  <section class="banner" role="banner">
     <h2>Peças de Carro com Desconto</h2>
     <p>Ofertas imperdíveis esta semana!</p>
     <a href="products.html" class="btn-highlight">Ver Produtos</a>
   </section>
 
-  <section class="categories">
+  <section class="categories" aria-label="Categorias de produtos">
     <h3>Categorias</h3>
     <div class="category-list">
-      <div class="category">🔧 Motor</div>
-      <div class="category">🚗 Pneus</div>
-      <div class="category">💡 Iluminação</div>
-      <div class="category">📱 Eletrônicos</div>
-      <div class="category">🪑 Interior</div>
+      <div class="category" tabindex="0">🔧 Motor</div>
+      <div class="category" tabindex="0">🚗 Pneus</div>
+      <div class="category" tabindex="0">💡 Iluminação</div>
+      <div class="category" tabindex="0">📱 Eletrônicos</div>
+      <div class="category" tabindex="0">🪑 Interior</div>
     </div>
   </section>
 
-  <section class="featured">
+  <section class="featured" aria-label="Produtos em destaque">
     <h3>Ofertas em Destaque</h3>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="assets/images/motor.jpg" alt="Peça de motor">
-        <h4>Peça de Motor V8</h4>
-        <p>Alta performance, entrega rápida.</p>
-        <a href="https://wa.me/5511999999999" class="btn-whatsapp">Comprar no WhatsApp</a>
+    <div class="product-carousel-wrapper">
+      <button class="carousel-btn carousel-btn-left" id="btnLeft" aria-label="Scroll para esquerda">◀</button>
+      <div class="product-carousel" id="productCarousel" tabindex="0" aria-live="polite" aria-atomic="true">
+        <!-- Produtos inseridos aqui via JS -->
       </div>
-      <div class="product-card">
-        <img src="assets/images/farol.jpg" alt="Farol LED">
-        <h4>Farol LED 6000K</h4>
-        <p>Visibilidade máxima para seu carro.</p>
-        <a href="https://wa.me/5511999999999" class="btn-whatsapp">Comprar no WhatsApp</a>
+      <button class="carousel-btn carousel-btn-right" id="btnRight" aria-label="Scroll para direita">▶</button>
+    </div>
+  </section>
+
+  <section class="advantages" aria-label="Vantagens da loja">
+    <h3>Por que comprar conosco?</h3>
+    <div class="advantages-list">
+      <div class="advantage">
+        <h4>Entrega Rápida</h4>
+        <p>Envio express para todo Brasil. Receba suas peças em até 3 dias úteis.</p>
+      </div>
+      <div class="advantage">
+        <h4>Peças Originais</h4>
+        <p>Produtos de alta qualidade, certificados pelos fabricantes.</p>
+      </div>
+      <div class="advantage">
+        <h4>Suporte Especializado</h4>
+        <p>Equipe pronta para ajudar você a escolher a peça ideal para seu veículo.</p>
       </div>
     </div>
   </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 Auto Peças Rápidas. Todos os direitos reservados.</p>
+  <section class="how-to-buy" aria-label="Como comprar">
+    <h3>Como comprar</h3>
+    <p>Escolha a peça, clique em "Ver Detalhes" e fale direto conosco pelo WhatsApp para um atendimento rápido e personalizado.</p>
+    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="btn-whatsapp" aria-label="Fale conosco pelo WhatsApp">Comprar pelo WhatsApp</a>
+  </section>
+
+  <section class="testimonials" aria-label="Depoimentos de clientes">
+    <h3>O que nossos clientes dizem</h3>
+    <div class="testimonial-slider" aria-live="polite" aria-atomic="true">
+      <div class="testimonial active">
+        <p>"Comprei um pneu e recebi rapidinho, com
+      <!-- Continuando da seção de depoimentos (testimonials) -->
+      <p>"Comprei um pneu e recebi rapidinho, com ótimo preço e qualidade. Recomendo muito!"</p>
+      <div class="testimonial-author">— João M.</div>
+    </div>
+    <div class="testimonial">
+      <p>"Atendimento excelente e peças originais. Minha loja de confiança para acessórios de carro."</p>
+      <div class="testimonial-author">— Ana S.</div>
+    </div>
+    <div class="testimonial">
+      <p>"Muito prático comprar direto pelo WhatsApp, super rápido e seguro."</p>
+      <div class="testimonial-author">— Carlos P.</div>
+    </div>
+    <div class="testimonial-controls" role="group" aria-label="Controles de depoimentos">
+      <button id="prevTestimonial" aria-label="Depoimento anterior">←</button>
+      <button id="nextTestimonial" aria-label="Próximo depoimento">→</button>
+    </div>
+  </section>
+
+  <section class="partners" aria-label="Marcas e parceiros">
+    <h3>Marcas que oferecemos</h3>
+    <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:2rem; max-width: 900px; margin: 0 auto; padding:1rem 0;">
+      <img src="assets/images/marca1.png" alt="Marca A" style="height: 60px;" />
+      <img src="assets/images/marca2.png" alt="Marca B" style="height: 60px;" />
+      <img src="assets/images/marca3.png" alt="Marca C" style="height: 60px;" />
+      <img src="assets/images/marca4.png" alt="Marca D" style="height: 60px;" />
+      <img src="assets/images/marca5.png" alt="Marca E" style="height: 60px;" />
+    </div>
+  </section>
+
+  <section class="faqs" aria-label="Perguntas frequentes" style="background:#222; color:#eee; padding:3rem 2rem; max-width: 900px; margin: 2rem auto; border-radius:12px;">
+    <h3 style="color:#ff6f00; text-align:center; margin-bottom:2rem;">Dúvidas frequentes</h3>
+    <dl>
+      <dt style="font-weight:700; margin-top:1rem; cursor:pointer;">Qual o prazo de entrega?</dt>
+      <dd style="margin-left:1rem; margin-top:0.3rem;">Entrega rápida em até 3 dias úteis para a maioria das regiões.</dd>
+
+      <dt style="font-weight:700; margin-top:1rem; cursor:pointer;">Posso trocar uma peça se tiver problema?</dt>
+      <dd style="margin-left:1rem; margin-top:0.3rem;">Sim, trocamos peças com defeito em até 30 dias após a compra.</dd>
+
+      <dt style="font-weight:700; margin-top:1rem; cursor:pointer;">Vocês vendem peças para todos os modelos de carros?</dt>
+      <dd style="margin-left:1rem; margin-top:0.3rem;">Trabalhamos com as principais marcas e modelos. Consulte seu veículo via WhatsApp.</dd>
+
+      <dt style="font-weight:700; margin-top:1rem; cursor:pointer;">Como faço para comprar?</dt>
+      <dd style="margin-left:1rem; margin-top:0.3rem;">Basta clicar em “Ver Detalhes” no produto desejado e falar com a gente pelo WhatsApp.</dd>
+    </dl>
+  </section>
+
+  <section class="final-cta" aria-label="Chamada para ação final" style="background:#ff6f00; color:#121212; padding:3rem 2rem; text-align:center; margin-top:3rem; border-radius:12px; max-width: 700px; margin-left:auto; margin-right:auto;">
+    <h3 style="margin-bottom:1rem;">Pronto para comprar sua peça agora?</h3>
+    <p style="margin-bottom:2rem; font-weight:700;">Fale com a gente direto pelo WhatsApp e garanta o melhor preço!</p>
+    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="Comprar pelo WhatsApp" style="background:#121212; color:#ff6f00; padding:1rem 2.5rem; font-weight:bold; border-radius:8px; text-decoration:none; font-size:1.2rem;">Comprar pelo WhatsApp</a>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <p>© 2025 Auto Peças Rápidas. Todos os direitos reservados.</p>
+    <div class="social-links" aria-label="Redes sociais">
+      <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a> |
+      <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a> |
+      <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">Twitter</a>
+    </div>
+    <p>Contato: contato@autopecasrapidas.com | (11) 99999-9999</p>
   </footer>
 
-  <a href="https://wa.me/5511999999999" class="floating-whatsapp">💬</a>
+  <script>
+    // Script para carousel de produtos
+    const productCarousel = document.getElementById('productCarousel');
+    const btnLeft = document.getElementById('btnLeft');
+    const btnRight = document.getElementById('btnRight');
+
+    // Exemplo de produtos, substituir por dados reais / via API
+    const products = [
+      {id:1, name:"Filtro de Ar", price:"R$ 89,90", img:"assets/images/filtro-ar.jpg"},
+      {id:2, name:"Pastilha de Freio", price:"R$ 150,00", img:"assets/images/pastilha-freio.jpg"},
+      {id:3, name:"Bateria 12V", price:"R$ 320,00", img:"assets/images/bateria.jpg"},
+      {id:4, name:"Pneu 205/55 R16", price:"R$ 450,00", img:"assets/images/pneu.jpg"},
+      {id:5, name:"Lâmpada LED", price:"R$ 60,00", img:"assets/images/lamps-led.jpg"},
+      {id:6, name:"Óleo Lubrificante", price:"R$ 35,00", img:"assets/images/oleo.jpg"}
+    ];
+
+    function renderProducts() {
+      productCarousel.innerHTML = '';
+      products.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'product-card';
+        card.innerHTML = `
+          <img src="${p.img}" alt="${p.name}" />
+          <h4>${p.name}</h4>
+          <p>${p.price}</p>
+          <a href="product.html?id=${p.id}" class="btn-viewdetails" aria-label="Ver detalhes de ${p.name}">Ver Detalhes</a>
+        `;
+        productCarousel.appendChild(card);
+      });
+    }
+    renderProducts();
+
+    btnLeft.addEventListener('click', () => {
+      productCarousel.scrollBy({ left: -240, behavior: 'smooth' });
+    });
+    btnRight.addEventListener('click', () => {
+      productCarousel.scrollBy({ left: 240, behavior: 'smooth' });
+    });
+
+    // Script para slider de depoimentos
+    const testimonials = document.querySelectorAll('.testimonial');
+    let currentTestimonial = 0;
+
+    document.getElementById('prevTestimonial').addEventListener('click', () => {
+      testimonials[currentTestimonial].classList.remove('active');
+      currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+      testimonials[currentTestimonial].classList.add('active');
+    });
+
+    document.getElementById('nextTestimonial').addEventListener('click', () => {
+      testimonials[currentTestimonial].classList.remove('active');
+      currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+      testimonials[currentTestimonial].classList.add('active');
+    });
+
+    // FAQ toggle simples
+    document.querySelectorAll('.faqs dt').forEach(dt => {
+      dt.addEventListener('click', () => {
+        const dd = dt.nextElementSibling;
+        if (dd.style.display === 'block') {
+          dd.style.display = 'none';
+        } else {
+          dd.style.display = 'block';
+        }
+      });
+    });
+  </script>
 </body>
 </html>
