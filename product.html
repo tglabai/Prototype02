@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Produto - Auto Peças</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">Auto Peças Rápidas</h1>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="products.html">Produtos</a>
+      <a href="about.html">Sobre</a>
+    </nav>
+  </header>
+
+  <section id="product-section" class="product-detail" style="display:none;">
+    <img id="product-image" src="" alt="" />
+    <div class="info">
+      <h2 id="product-name"></h2>
+      <p id="product-description"></p>
+      <div class="price" id="product-price"></div>
+      <a id="product-whatsapp" href="#" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">Comprar via WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="not-found" class="not-found" style="display:none;">
+    Produto não encontrado.
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Auto Peças Rápidas. Todos os direitos reservados.</p>
+  </footer>
+
+  <a href="https://wa.me/5511999999999" class="floating-whatsapp">💬</a>
+
+  <script>
+    // Função para pegar o parâmetro 'id' da URL
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    async function loadProduct() {
+      const productId = getQueryParam('id');
+      if (!productId) {
+        showNotFound();
+        return;
+      }
+
+      try {
+        const response = await fetch('products.json');
+        if (!response.ok) throw new Error('Erro ao carregar dados do produto');
+
+        const products = await response.json();
+        const product = products.find(p => p.id === productId);
+
+        if (!product) {
+          showNotFound();
+          return;
+        }
+
+        // Preenche os dados no HTML
+        document.getElementById('product-image').src = product.imagem;
+        document.getElementById('product-image').alt = product.nome;
+        document.getElementById('product-name').textContent = product.nome;
+        document.getElementById('product-description').textContent = product.descricao;
+        document.getElementById('product-price').textContent = product.preco;
+        document.getElementById('product-whatsapp').href = product.whatsapp;
+
+        document.getElementById('product-section').style.display = 'grid';
+      } catch (error) {
+        console.error(error);
+        showNotFound();
+      }
+    }
+
+    function showNotFound() {
+      document.getElementById('product-section').style.display = 'none';
+      document.getElementById('not-found').style.display = 'block';
+    }
+
+    window.onload = loadProduct;
+  </script>
+</body>
+</html>

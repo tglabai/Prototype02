@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "nome": "Pneu Aro 17",
+    "descricao": "Durável e ideal para estradas brasileiras.",
+    "imagem": "assets/images/pneu.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "pneus"
+  },
+  {
+    "id": "2",
+    "nome": "Bateria 60Ah",
+    "descricao": "Alto desempenho com 1 ano de garantia.",
+    "imagem": "assets/images/bateria.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "motor"
+  },
+  {
+    "id": "3",
+    "nome": "Rádio MP3 Bluetooth",
+    "descricao": "Conectividade total com seu smartphone.",
+    "imagem": "assets/images/radio.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "eletronicos"
+  },
+  {
+    "id": "4",
+    "nome": "Farol LED",
+    "descricao": "Iluminação potente e econômica.",
+    "imagem": "assets/images/farol-led.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "iluminacao"
+  },
+  {
+    "id": "5",
+    "nome": "Capa de Banco de Couro",
+    "descricao": "Design elegante e fácil de limpar.",
+    "imagem": "assets/images/capa-banco.jpg",
+    "whatsapp": "https://wa.me/5511999999999",
+    "categoria": "interior"
+  }
+]
